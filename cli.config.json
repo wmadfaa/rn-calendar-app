@@ -1,0 +1,9 @@
+{
+  "folders": {
+    "screens": "./src/screens"
+  },
+  "infos": {
+    "packageName": "com.calendar",
+    "projectName": "calendar"
+  }
+}
