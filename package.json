@@ -1,26 +1,52 @@
 {
-  "name": "Calendar",
+  "name": "calendar",
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "start": "react-native start",
-    "test": "jest"
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "coverage": "jest --coverage",
+    "coverage:watch": "jest --coverage --watch",
+    "run:android": "./node_modules/.bin/react-native run-android",
+    "run:ios": "./node_modules/.bin/react-native run-ios",
+    "start": "./node_modules/.bin/react-native start",
+    "start:resetCache": "watchman watch-del-all && rm -fr $TMPDIR/react-* && npm start -- --reset-cache",
+    "link:assets": "react-native-asset",
+    "lint": "eslint --ext .js,.ts,.tsx .",
+    "lint:fix": "yarn lint --fix",
+    "prettier": "prettier \"**/*.{json,md,js,ts,tsx}\" --list-different",
+    "prettier:fix": "yarn prettier --write",
+    "postinstall": "npx jetify",
+    "clean": "react-native-clean-project",
+    "cli": "./cli/bin/run"
   },
   "dependencies": {
     "react": "16.8.6",
-    "react-native": "0.60.3"
+    "react-native": "0.60.3",
+    "react-native-svg": "^9.6.4"
   },
   "devDependencies": {
     "@babel/core": "^7.5.0",
     "@babel/runtime": "^7.5.0",
-    "@react-native-community/eslint-config": "^0.0.3",
+    "@react-native-community/eslint-config": "^0.0.5",
     "@types/jest": "^24.0.15",
     "@types/react": "^16.8.23",
     "@types/react-native": "^0.60.1",
     "@types/react-test-renderer": "^16.8.2",
     "babel-jest": "^24.1.0",
+    "eslint": "^6.2.1",
+    "eslint-config-prettier": "^6.1.0",
+    "eslint-plugin-prettier": "^3.1.0",
+    "husky": ">=1",
+    "imagemin-lint-staged": "^0.4.0",
     "jest": "^24.1.0",
+    "jetifier": "^1.6.4",
+    "lint-staged": ">=8",
     "metro-react-native-babel-preset": "^0.54.1",
+    "prettier": "^1.18.2",
+    "react-native-asset": "^2.0.0",
+    "react-native-clean-project": "^3.2.4",
+    "react-native-svg-transformer": "^0.13.0",
     "react-test-renderer": "16.8.6",
     "typescript": "^3.5.3"
   },
@@ -34,5 +60,10 @@
       "json",
       "node"
     ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
   }
 }
