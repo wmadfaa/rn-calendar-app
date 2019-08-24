@@ -3,7 +3,11 @@ import {
   createDrawerNavigator,
   createSwitchNavigator,
   createAppContainer,
+  createStackNavigator,
 } from 'react-navigation';
+
+import BottomTabNavigatorConfig from './NavigatorsConfig/BottomTabNavigatorConfig';
+import DrawerNavigatorConfig from './NavigatorsConfig/DrawerNavigatorConfig';
 
 export enum ROUTES {
   ROOT_APP = 'ROOT_APP',
@@ -14,7 +18,7 @@ export enum ROUTES {
   APP_ACCOUNT_SETTINGS = 'APP_ACCOUNT_SETTINGS',
 }
 
-const appStack = createBottomTabNavigator({
+const appStack = createStackNavigator({
   [ROUTES.APP_CALENDER]: () => {},
   [ROUTES.APP_SEARCH]: () => {},
   [ROUTES.APP_CREATE_NEW_EVENT]: () => {},
@@ -22,7 +26,9 @@ const appStack = createBottomTabNavigator({
   [ROUTES.APP_ACCOUNT_SETTINGS]: () => {},
 });
 
-const appDrawer = createDrawerNavigator(appStack, {});
+const appBottomTabNavigator = createBottomTabNavigator(appStack, BottomTabNavigatorConfig);
+
+const appDrawer = createDrawerNavigator(appBottomTabNavigator, DrawerNavigatorConfig);
 
 const rootNavigator = createSwitchNavigator({
   [ROUTES.ROOT_APP]: appDrawer,
