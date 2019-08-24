@@ -21,9 +21,16 @@
     "cli": "./cli/bin/run"
   },
   "dependencies": {
+    "@react-native-community/async-storage": "^1.6.1",
+    "jsog": "^1.0.7",
     "react": "16.8.6",
     "react-native": "0.60.3",
-    "react-native-svg": "^9.6.4"
+    "react-native-svg": "^9.6.4",
+    "react-redux": "^7.1.0",
+    "redux": "^4.0.4",
+    "redux-persist": "^5.10.0",
+    "redux-saga": "^1.0.5",
+    "typesafe-actions": "^4.4.2"
   },
   "devDependencies": {
     "@babel/core": "^7.5.0",
@@ -32,6 +39,7 @@
     "@types/jest": "^24.0.15",
     "@types/react": "^16.8.23",
     "@types/react-native": "^0.60.1",
+    "@types/react-redux": "^7.1.2",
     "@types/react-test-renderer": "^16.8.2",
     "babel-jest": "^24.1.0",
     "eslint": "^6.2.1",
@@ -48,6 +56,7 @@
     "react-native-clean-project": "^3.2.4",
     "react-native-svg-transformer": "^0.13.0",
     "react-test-renderer": "16.8.6",
+    "redux-devtools-extension": "^2.13.8",
     "typescript": "^3.5.3"
   },
   "jest": {
