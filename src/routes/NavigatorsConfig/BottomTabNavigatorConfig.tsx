@@ -32,14 +32,16 @@ const config: BottomTabNavigatorConfig = {
       })(routeName);
 
       if (IconComponent) {
-        return <Icon component={IconComponent} size={25} color={tintColor ? tintColor : undefined} />;
+        return <Icon component={IconComponent} size={25} fill={tintColor ? tintColor : undefined} />;
       }
       return null;
     },
+    drawerLockMode: 'locked-closed',
   }),
   tabBarOptions: {
     activeTintColor: theme.colors.grey[10],
     inactiveTintColor: theme.colors.grey[30],
+    showLabel: false,
   },
 };
 

@@ -3,11 +3,17 @@ import {
   createDrawerNavigator,
   createSwitchNavigator,
   createAppContainer,
-  createStackNavigator,
 } from 'react-navigation';
 
 import BottomTabNavigatorConfig from './NavigatorsConfig/BottomTabNavigatorConfig';
 import DrawerNavigatorConfig from './NavigatorsConfig/DrawerNavigatorConfig';
+
+// screens
+import CalenderScreen from '../screens/CalenderScreen/CalenderScreen';
+import CreateEventScreen from '../screens/CreateEventScreen/CreateEventScreen';
+import InvitesScreen from '../screens/InvitesScreen/InvitesScreen';
+import SearchScreen from '../screens/SearchScreen/SearchScreen';
+import SettingsScreen from '../screens/SettingsScreen/SettingsScreen';
 
 export enum ROUTES {
   ROOT_APP = 'ROOT_APP',
@@ -18,17 +24,18 @@ export enum ROUTES {
   APP_ACCOUNT_SETTINGS = 'APP_ACCOUNT_SETTINGS',
 }
 
-const appStack = createStackNavigator({
-  [ROUTES.APP_CALENDER]: () => {},
-  [ROUTES.APP_SEARCH]: () => {},
-  [ROUTES.APP_CREATE_NEW_EVENT]: () => {},
-  [ROUTES.APP_INVITES]: () => {},
-  [ROUTES.APP_ACCOUNT_SETTINGS]: () => {},
-});
+const appBottomTabNavigator = createBottomTabNavigator(
+  {
+    [ROUTES.APP_CALENDER]: CalenderScreen,
+    [ROUTES.APP_SEARCH]: SearchScreen,
+    [ROUTES.APP_CREATE_NEW_EVENT]: CreateEventScreen,
+    [ROUTES.APP_INVITES]: InvitesScreen,
+    [ROUTES.APP_ACCOUNT_SETTINGS]: SettingsScreen,
+  },
+  BottomTabNavigatorConfig,
+);
 
-const appBottomTabNavigator = createBottomTabNavigator(appStack, BottomTabNavigatorConfig);
-
-const appDrawer = createDrawerNavigator(appBottomTabNavigator, DrawerNavigatorConfig);
+const appDrawer = createDrawerNavigator({ appBottomTabNavigator }, DrawerNavigatorConfig);
 
 const rootNavigator = createSwitchNavigator({
   [ROUTES.ROOT_APP]: appDrawer,
