@@ -1,4 +1,3 @@
-
 import { StyleSheet, ViewStyle, TextStyle } from 'react-native';
 
 interface InvitesScreenStyles {
@@ -11,7 +10,6 @@ export default StyleSheet.create<InvitesScreenStyles>({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: '#F5FCFF',
   },
   title: {
     fontSize: 20,
@@ -19,4 +17,3 @@ export default StyleSheet.create<InvitesScreenStyles>({
     margin: 10,
   },
 });
-

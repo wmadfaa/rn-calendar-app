@@ -5,7 +5,6 @@
 	};
 	objectVersion = 46;
 	objects = {
-
 /* Begin PBXBuildFile section */
 		00E356F31AD99517003FC87E /* CalendarTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* CalendarTests.m */; };
 		0A48430FD2406FB4A762889C /* libPods-Calendar.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 64524C500D3EAA6A7A03BFCA /* libPods-Calendar.a */; };
@@ -20,6 +19,9 @@
 		92E5E2DB435CA73E98642D21 /* libPods-Calendar-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A4D36AAA9CCF5F94162B075 /* libPods-Calendar-tvOSTests.a */; };
 		B68619B6BC118785DC7EFA33 /* libPods-Calendar-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F2539D831FBF39E64BD80538 /* libPods-Calendar-tvOS.a */; };
 		BE80307CB91BEDA53754E8E7 /* libPods-CalendarTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C7749703A4BBC0A61130F92F /* libPods-CalendarTests.a */; };
+		B2BCF38D58CE4EA1B04DBA8E /* OpenSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 025F4EF1DA644E448E941DCC /* OpenSans-Bold.ttf */; };
+		A58E3837FF7F4A8ABE9B5212 /* OpenSans-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 970CA27EEFFA4C088FB97AF4 /* OpenSans-Light.ttf */; };
+		36B39E7270C74737A628EC4C /* OpenSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 090F2EA2A9D74A35BE4FFEA5 /* OpenSans-Regular.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +69,9 @@
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		ED2971642150620600B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
 		F2539D831FBF39E64BD80538 /* libPods-Calendar-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Calendar-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		025F4EF1DA644E448E941DCC /* OpenSans-Bold.ttf */ = {isa = PBXFileReference; name = "OpenSans-Bold.ttf"; path = "../src/assets/fonts/OpenSans-Bold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		970CA27EEFFA4C088FB97AF4 /* OpenSans-Light.ttf */ = {isa = PBXFileReference; name = "OpenSans-Light.ttf"; path = "../src/assets/fonts/OpenSans-Light.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		090F2EA2A9D74A35BE4FFEA5 /* OpenSans-Regular.ttf */ = {isa = PBXFileReference; name = "OpenSans-Regular.ttf"; path = "../src/assets/fonts/OpenSans-Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -165,6 +170,7 @@
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				F13730BB823937AB13E7CD34 /* Pods */,
+				74DAF47D9D814F03B6591691 /* Resources */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -197,6 +203,17 @@
 			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
+		};
+		74DAF47D9D814F03B6591691 /* Resources */ = {
+			isa = "PBXGroup";
+			children = (
+				025F4EF1DA644E448E941DCC /* OpenSans-Bold.ttf */,
+				970CA27EEFFA4C088FB97AF4 /* OpenSans-Light.ttf */,
+				090F2EA2A9D74A35BE4FFEA5 /* OpenSans-Regular.ttf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+			path = "";
 		};
 /* End PBXGroup section */
 
@@ -285,7 +302,7 @@
 		83CBB9F71A601CBA00E9B192 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0940;
+				LastUpgradeCheck = 940;
 				ORGANIZATIONNAME = Facebook;
 				TargetAttributes = {
 					00E356ED1AD99517003FC87E = {
@@ -338,6 +355,9 @@
 			files = (
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */,
+				B2BCF38D58CE4EA1B04DBA8E /* OpenSans-Bold.ttf in Resources */,
+				A58E3837FF7F4A8ABE9B5212 /* OpenSans-Light.ttf in Resources */,
+				36B39E7270C74737A628EC4C /* OpenSans-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

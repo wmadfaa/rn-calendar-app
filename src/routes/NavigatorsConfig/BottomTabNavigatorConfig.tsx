@@ -32,7 +32,7 @@ const config: BottomTabNavigatorConfig = {
       })(routeName);
 
       if (IconComponent) {
-        return <Icon component={IconComponent} size={25} fill={tintColor ? tintColor : undefined} />;
+        return <Icon component={IconComponent} size={30} fill={tintColor ? tintColor : undefined} />;
       }
       return null;
     },
