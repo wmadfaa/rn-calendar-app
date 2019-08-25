@@ -1,9 +1,3 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 57.1 (83088) - https://sketch.com -->
-    <title>icons/tab bar/analytics</title>
-    <desc>Created with Sketch.</desc>
-    <g id="icons/tab-bar/analytics" stroke="none" stroke-width="1" >
-        <path d="M24.8,8 C26.0150264,8 27,8.8954305 27,10 L27,22 C27,23.1045695 26.0150264,24 24.8,24 L7.2,24 C5.98497355,24 5,23.1045695 5,22 L5,10 C5,8.8954305 5.98497355,8 7.2,8 L24.8,8 Z M25,11.697 L17.9755138,16.6001936 C16.8444359,17.5898869 15.1555641,17.5898869 14.0244862,16.6001936 L14.0244862,16.6001936 L7,11.698 L7,22 L25,22 L25,11.697 Z M23.957,10 L8.042,10 L15.3414954,15.0950402 C15.6871025,15.3974465 16.1889436,15.422647 16.5605897,15.1706418 L16.6585046,15.0950402 L23.957,10 Z" id="Combined-Shape"></path>
-    </g>
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32">
+  <path d="M24.8 8c1.215 0 2.2.895 2.2 2v12c0 1.105-.985 2-2.2 2H7.2C5.985 24 5 23.105 5 22V10c0-1.105.985-2 2.2-2h17.6zm.2 3.697L17.976 16.6a3 3 0 0 1-3.952 0L7 11.698V22h18V11.697zM23.957 10H8.042l7.3 5.095a1 1 0 0 0 1.219.076l.098-.076L23.957 10z"/>
 </svg>

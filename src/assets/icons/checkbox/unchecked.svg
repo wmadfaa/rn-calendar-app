@@ -1,9 +1,3 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="24px" height="22px" viewBox="0 0 24 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 57.1 (83088) - https://sketch.com -->
-    <title>icons/side menu/checkbox/not checked</title>
-    <desc>Created with Sketch.</desc>
-    <g id="icons/side-menu/checkbox/not-checked" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <path d="M12,0 C20.3847411,0 23,3.01654308 23,11 C23,18.9834569 20.3847411,22 12,22 C3.61525889,22 1,18.9834569 1,11 C1,3.01654308 3.61525889,0 12,0 Z M12,2 C4.89049944,2 3,3.94621836 3,11 C3,18.0537816 4.89049944,20 12,20 C19.1095006,20 21,18.0537816 21,11 C21,3.94621836 19.1095006,2 12,2 Z" id="Rectangle" fill="#888DA6"></path>
-    </g>
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="22">
+  <path fill="#888DA6" fill-rule="evenodd" d="M12 0c8.385 0 11 3.017 11 11 0 7.983-2.615 11-11 11S1 18.983 1 11C1 3.017 3.615 0 12 0zm0 2c-7.11 0-9 1.946-9 9s1.89 9 9 9 9-1.946 9-9-1.89-9-9-9z"/>
 </svg>
