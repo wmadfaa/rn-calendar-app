@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="22px" viewBox="0 0 24 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 57.1 (83088) - https://sketch.com -->
+    <title>icons/side menu/checkbox/checked</title>
+    <desc>Created with Sketch.</desc>
+    <g id="icons/side-menu/checkbox/checked" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M12,0 C20.3847411,0 23,3.01654308 23,11 C23,18.9834569 20.3847411,22 12,22 C3.61525889,22 1,18.9834569 1,11 C1,3.01654308 3.61525889,0 12,0 Z" id="Rectangle" fill="#4D6EFF"></path>
+        <path d="M8.44974747,12.4497475 C7.89746272,12.4497475 7.44974747,12.0020322 7.44974747,11.4497475 L7.44974747,8.44974747 C7.44974747,7.89746272 7.89746272,7.44974747 8.44974747,7.44974747 C9.00203222,7.44974747 9.44974747,7.89746272 9.44974747,8.44974747 L9.44874747,10.4487475 L15.4497475,10.4497475 C16.0020322,10.4497475 16.4497475,10.8974627 16.4497475,11.4497475 C16.4497475,12.0020322 16.0020322,12.4497475 15.4497475,12.4497475 L8.44974747,12.4497475 L8.44974747,12.4497475 Z" id="Combined-Shape" fill="#FFFFFF" transform="translate(11.949747, 9.949747) rotate(-45.000000) translate(-11.949747, -9.949747) "></path>
+    </g>
+</svg>

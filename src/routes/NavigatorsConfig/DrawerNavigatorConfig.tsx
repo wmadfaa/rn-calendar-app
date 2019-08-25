@@ -42,7 +42,9 @@ const Drawer: React.FC<DrawerItemsProps> = () => {
             style={[styles.sectionItem, activeView === ViewTypes.Schedule ? styles.activeSectionItem : {}]}
             onPress={() => setActiveView(ViewTypes.Schedule)}
           >
-            <ScheduleIcon fill={activeView === ViewTypes.Schedule ? theme.colors.primary.dark : undefined} />
+            <ScheduleIcon
+              fill={activeView === ViewTypes.Schedule ? theme.colors.primary.dark : theme.colors.grey[30]}
+            />
             <Text variant="h4" light style={styles.sectionLabel}>
               Schedule
             </Text>
@@ -51,7 +53,7 @@ const Drawer: React.FC<DrawerItemsProps> = () => {
             style={[styles.sectionItem, activeView === ViewTypes.Day ? styles.activeSectionItem : {}]}
             onPress={() => setActiveView(ViewTypes.Day)}
           >
-            <DayIcon fill={activeView === ViewTypes.Day ? theme.colors.primary.dark : undefined} />
+            <DayIcon fill={activeView === ViewTypes.Day ? theme.colors.primary.dark : theme.colors.grey[30]} />
             <Text variant="h4" light style={styles.sectionLabel}>
               Day
             </Text>
@@ -60,7 +62,9 @@ const Drawer: React.FC<DrawerItemsProps> = () => {
             style={[styles.sectionItem, activeView === ViewTypes.ThreeDays ? styles.activeSectionItem : {}]}
             onPress={() => setActiveView(ViewTypes.ThreeDays)}
           >
-            <ThreeDaysIcon fill={activeView === ViewTypes.ThreeDays ? theme.colors.primary.dark : undefined} />
+            <ThreeDaysIcon
+              fill={activeView === ViewTypes.ThreeDays ? theme.colors.primary.dark : theme.colors.grey[30]}
+            />
             <Text variant="h4" light style={styles.sectionLabel}>
               3 day
             </Text>
@@ -69,7 +73,7 @@ const Drawer: React.FC<DrawerItemsProps> = () => {
             style={[styles.sectionItem, activeView === ViewTypes.Week ? styles.activeSectionItem : {}]}
             onPress={() => setActiveView(ViewTypes.Week)}
           >
-            <WeekIcon fill={activeView === ViewTypes.Week ? theme.colors.primary.dark : undefined} />
+            <WeekIcon fill={activeView === ViewTypes.Week ? theme.colors.primary.dark : theme.colors.grey[30]} />
             <Text variant="h4" light style={styles.sectionLabel}>
               Week
             </Text>
@@ -78,7 +82,7 @@ const Drawer: React.FC<DrawerItemsProps> = () => {
             style={[styles.sectionItem, activeView === ViewTypes.Month ? styles.activeSectionItem : {}]}
             onPress={() => setActiveView(ViewTypes.Month)}
           >
-            <MonthIcon fill={activeView === ViewTypes.Month ? theme.colors.primary.dark : undefined} />
+            <MonthIcon fill={activeView === ViewTypes.Month ? theme.colors.primary.dark : theme.colors.grey[30]} />
             <Text variant="h4" light style={styles.sectionLabel}>
               Month
             </Text>
@@ -92,7 +96,6 @@ const Drawer: React.FC<DrawerItemsProps> = () => {
           </View>
           <View style={styles.sectionItem}>
             <Checkbox
-              outline
               right={
                 <Text variant="h4" light style={styles.sectionLabel}>
                   Events
@@ -102,7 +105,6 @@ const Drawer: React.FC<DrawerItemsProps> = () => {
           </View>
           <View style={styles.sectionItem}>
             <Checkbox
-              outline
               right={
                 <Text variant="h4" light style={styles.sectionLabel}>
                   Birthdays
@@ -112,7 +114,6 @@ const Drawer: React.FC<DrawerItemsProps> = () => {
           </View>
           <View style={styles.sectionItem}>
             <Checkbox
-              outline
               right={
                 <Text variant="h4" light style={styles.sectionLabel}>
                   Holidays

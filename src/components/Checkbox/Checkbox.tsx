@@ -1,42 +1,12 @@
 import React, { useState } from 'react';
-import { TouchableHighlight, View, Text, Platform, TouchableHighlightProps, GestureResponderEvent } from 'react-native';
-import { SvgProps } from 'react-native-svg';
+import { TouchableHighlight, View, Text, TouchableHighlightProps, GestureResponderEvent } from 'react-native';
 
-import styles from './Checkbox.style';
 import { theme } from '../../styles/index';
 
-interface Icon {
-  checked: React.ComponentClass<SvgProps, any>;
-  unchecked: React.ComponentClass<SvgProps, any>;
-}
+import styles from './Checkbox.style';
 
-interface Icons {
-  default: Icon;
-  outline: Icon;
-}
-
-const Icons: Icons = {
-  default: {
-    checked: Platform.select({
-      ios: () => require('../../assets/icons/checkbox/ios-checkbox.svg').default,
-      android: () => require('../../assets/icons/checkbox/md-checkbox.svg').default,
-    })(),
-    unchecked: Platform.select({
-      ios: () => require('../../assets/icons/checkbox/ios-square.svg').default,
-      android: () => require('../../assets/icons/checkbox/md-square.svg').default,
-    })(),
-  },
-  outline: {
-    checked: Platform.select({
-      ios: () => require('../../assets/icons/checkbox/ios-checkbox-outline.svg').default,
-      android: () => require('../../assets/icons/checkbox/md-checkbox-outline.svg').default,
-    })(),
-    unchecked: Platform.select({
-      ios: () => require('../../assets/icons/checkbox/ios-square-outline.svg').default,
-      android: () => require('../../assets/icons/checkbox/md-square-outline.svg').default,
-    })(),
-  },
-};
+import checkedIcon from '../../assets/icons/checkbox/checked.svg';
+import uncheckedIcon from '../../assets/icons/checkbox/unchecked.svg';
 
 export interface CheckboxProps extends TouchableHighlightProps {
   left?: React.ReactNode;
@@ -44,7 +14,6 @@ export interface CheckboxProps extends TouchableHighlightProps {
   label?: Text | string;
   dir?: 'rtl' | 'ltr';
   checked?: boolean;
-  outline?: boolean;
   onChange?(checked: boolean): void;
 }
 
@@ -54,7 +23,6 @@ const Checkbox: React.FC<CheckboxProps> = ({
   label,
   dir = 'ltr',
   checked = false,
-  outline = false,
   onPress,
   onChange,
   ...props
@@ -80,7 +48,7 @@ const Checkbox: React.FC<CheckboxProps> = ({
   };
 
   const renderIcon = () => {
-    const IconComponent = Icons[outline ? 'outline' : 'default'][isChecked ? 'checked' : 'unchecked'];
+    const IconComponent = isChecked ? checkedIcon : uncheckedIcon;
     return (
       <IconComponent width={30} height={30} fill={isChecked ? theme.colors.primary.dark : theme.colors.grey[40]} />
     );
