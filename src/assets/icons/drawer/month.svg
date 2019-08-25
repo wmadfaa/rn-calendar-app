@@ -1,11 +1,3 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="24px" height="22px" viewBox="0 0 24 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 57.1 (83088) - https://sketch.com -->
-    <title>icons/side menu/month</title>
-    <desc>Created with Sketch.</desc>
-    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="icons/side-menu/month" fill="#9EA3BA">
-            <path d="M20,3 C21.1045695,3 22,3.8954305 22,5 L22,17 C22,18.1045695 21.1045695,19 20,19 L4,19 C2.8954305,19 2,18.1045695 2,17 L2,5 C2,3.8954305 2.8954305,3 4,3 L20,3 Z M8,12 L4,12 L4,17 L8,17 L8,12 Z M14,12 L10,12 L10,17 L14,17 L14,12 Z M20,12 L16,12 L16,17 L20,17 L20,12 Z M8,5 L4,5 L4,10 L8,10 L8,5 Z M14,5 L10,5 L10,10 L14,10 L14,5 Z M20,5 L16,5 L16,10 L20,10 L20,5 Z" id="Combined-Shape"></path>
-        </g>
-    </g>
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="22">
+  <path fill="#9EA3BA" fill-rule="evenodd" d="M20 3a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h16zM8 12H4v5h4v-5zm6 0h-4v5h4v-5zm6 0h-4v5h4v-5zM8 5H4v5h4V5zm6 0h-4v5h4V5zm6 0h-4v5h4V5z"/>
 </svg>
