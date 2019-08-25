@@ -1,7 +1,8 @@
 multipass: true
+full: true
 
 plugins:
-  - addAttributesToSVGElement: false
+  - addAttributesToSVGElement
   - addClassesToSVGElement: false
   - cleanupAttrs: true
   - cleanupEnableBackground: true
@@ -11,15 +12,19 @@ plugins:
       floatPrecision: 2
   - collapseGroups: true
   - convertColors: true
+  - convertEllipseToCircle
   - convertPathData:
       noSpaceAfterFlags: false
   - convertShapeToPath: true
   - convertStyleToAttrs: true
   - convertTransform: true
+  - inlineStyles
   - mergePaths: true
   - minifyStyles: true
   - moveElemsAttrsToGroup: true
   - moveGroupAttrsToElems: true
+  - prefixIds
+  - removeAttributesBySelector
   - removeAttrs: true
   - removeComments: true
   - removeDesc: true
@@ -33,7 +38,9 @@ plugins:
   - removeHiddenElems: true
   - removeMetadata: true
   - removeNonInheritableGroupAttrs: true
+  - removeOffCanvasPaths
   - removeRasterImages
+  - removeScriptElement
   - removeStyleElement: true
   - removeTitle: true
   - removeUnknownsAndDefaults: true
@@ -43,8 +50,10 @@ plugins:
   - removeViewBox: true
   - removeXMLNS: false
   - removeXMLProcInst: true
+  - reusePaths
   - sortAttrs: true
-  - transformsWithOnePath: true
+  - sortDefsChildren
+  - addAttributesToSVGElement: false
 
 js2svg:
   pretty: true
