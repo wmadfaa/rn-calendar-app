@@ -38,6 +38,10 @@ const yellow = <const>{
   light: '#FDF1DB',
 };
 
+const components = <const>{
+  overlay: 'rgba(0,0,0,0.50)',
+};
+
 const colors = <const>{
   white: '#FFFFFF',
   black: '#000000',
@@ -48,6 +52,7 @@ const colors = <const>{
   green,
   violet,
   yellow,
+  components,
 };
 
 export default colors;

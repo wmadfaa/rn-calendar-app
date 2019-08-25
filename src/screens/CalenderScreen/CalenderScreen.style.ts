@@ -1,4 +1,3 @@
-
 import { StyleSheet, ViewStyle, TextStyle } from 'react-native';
 
 interface CalenderScreenStyles {
@@ -11,7 +10,6 @@ export default StyleSheet.create<CalenderScreenStyles>({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: '#F5FCFF',
   },
   title: {
     fontSize: 20,
@@ -19,4 +17,3 @@ export default StyleSheet.create<CalenderScreenStyles>({
     margin: 10,
   },
 });
-
